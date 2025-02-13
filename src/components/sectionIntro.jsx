@@ -42,7 +42,7 @@ const SectionIntro = () => {
     <SectionContainer>
       <IntroWrapper rapper className="intro-wrapper">
         <Span>Hello</Span>
-        <Heading>I&apos;m Ted Dinh</Heading>
+        <Heading>I&apos;m Hans Dinh</Heading>
         <Heading>A front-end developer</Heading>
       </IntroWrapper>
     </SectionContainer>
