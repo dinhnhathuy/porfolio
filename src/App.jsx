@@ -1,6 +1,7 @@
 import MainHeader from './components/mainHeader'
 import SectionIntro from './components/sectionIntro'
 import SectionExp from './components/sectionExp'
+import SectionProjects from './components/sectionProjects'
 import './App.css'
 import styled from 'styled-components'
 
@@ -19,6 +20,7 @@ function App() {
       <MainHeader />
       <SectionIntro/>
       <SectionExp />
+      <SectionProjects />
     </Container>
   )
 }

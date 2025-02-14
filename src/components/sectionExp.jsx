@@ -1,11 +1,14 @@
 import styled from 'styled-components';
 import { SectionContainer } from '../styles/container';
+import { FadeIn, FadeDown, FadeUp } from '../styles/animation';
 
 const LeftSection = styled.div`
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
   max-width: 600px;
+  font-size: 2rem;
+  ${FadeIn}
 `
 
 const RightSection = styled.div`
@@ -14,6 +17,7 @@ const RightSection = styled.div`
   padding-left: 4rem;
   min-width: 300px;
   gap: 1rem;
+  ${FadeIn}
 `
 
 const JobTitle = styled.span`
@@ -39,6 +43,11 @@ const Title = styled.h4`
   font-size: 1.5rem;
   font-weight: 600;
   opacity: 0.7;
+  ${FadeDown}
+`
+
+const Info = styled.div`
+  ${FadeUp}
 `
 
 const SectionExp = () => {
@@ -52,29 +61,29 @@ const SectionExp = () => {
       </LeftSection>
       <RightSection>
         <Title>Experiences</Title>
-        <div>
+        <Info>
           <JobTitle>Front-end developer</JobTitle>   <br />
           <Company target="_blank" href='https://google.com.vn'>Flix Communication</Company> <br />
           <TimeLine>2020 - present</TimeLine>  
-        </div>        
+        </Info>        
           
-        <div>
+        <Info>
           <JobTitle>Front-end developer</JobTitle>   <br />
           <Company target="_blank" href='https://google.com.vn'>Flix Communication</Company> <br />
           <TimeLine>2020 - present</TimeLine>  
-        </div>        
+        </Info>        
           
-        <div>
+        <Info>
           <JobTitle>Front-end developer</JobTitle>   <br />
           <Company target="_blank" href='https://google.com.vn'>Flix Communication</Company> <br />
           <TimeLine>2020 - present</TimeLine>  
-        </div>        
+        </Info>        
           
-        <div>
+        <Info>
           <JobTitle>Front-end developer</JobTitle>   <br />
           <Company target="_blank" href='https://google.com.vn'>Flix Communication</Company> <br />
           <TimeLine>2020 - present</TimeLine>  
-        </div>        
+        </Info>        
           
       </RightSection>
     </SectionContainer>
